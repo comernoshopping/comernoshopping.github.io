@@ -2193,7 +2193,7 @@ body {
     color:#333333;
 }
 .content {
-	visibility: hidden;
+	opacity: 0;
 }
 
 .lightbox#img1-2 {
@@ -2212,7 +2212,7 @@ body {
 }
 
 .lightbox:target .content {
-	visibility: visible;
+	opacity: 1;
 }
 
 
