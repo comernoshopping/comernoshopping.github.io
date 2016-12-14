@@ -1,0 +1,162 @@
+
+<html lang="en">
+  <head>
+    <meta charset="ufc-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	
+		<script>
+		
+		  $(document).ready(function() {
+
+      
+      var html = "";
+      var url = "https://api.github.com/search/repositories?sort=stars&order=desc&q=tutorial+in:description+stars:>20+pushed:>";
+     // var date = Date.today().add(-30).toString();
+	 var date = "2013-10-01";
+      url += date;
+	  
+		urlAll = url;
+		<!-- urlJavascript = url + "+language:javascript"; -->
+		<!-- urlJava = url + "+language:java"; -->
+		<!-- urlPython = url + "+language:python"; -->
+		<!-- urlCSS = url + "+language:css"; -->
+		<!-- urlPHP = url + "+language:php"; -->
+		<!-- urlRuby = url + "+language:ruby"; -->
+		<!-- urlCplus = url + "+language:c%2B%2B"; -->
+		<!-- urlC = url + "+language:c"; -->
+		<!-- urlShell = url + "+language:shell"; -->
+		<!-- urlCsharp = url + "+language:csharp"; -->
+		<!-- urlObjectivec = url + "+language:objective-c"; -->
+		<!-- urlR = url + "+language:r"; -->
+		<!-- urlGo = url + "+language:go"; -->
+		<!-- urlSwift = url + "+language:swift"; -->
+			
+         
+	
+		 
+		 
+		 
+		 
+      
+		$.getJSON(urlAll, function(json) {
+		var jsonStr = JSON.stringify(json);
+		document.body.innerHTML = jsonStr;
+		});
+		<!-- $.getJSON(urlJavascript, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#javascript").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlJava, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#java").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlPython, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#python").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlCSS, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#css").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlPHP, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#php").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlRuby, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#ruby").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlCplus, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#cplus").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlC, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#c").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlShell, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#shell").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlCsharp, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#csharp").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlObjectivec, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#objectivec").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlR, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#r").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlGo, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#go").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		<!-- $.getJSON(urlSwift, function(json) { -->
+		<!-- var items = json.items; -->
+			<!-- for (i=0;i<items.length;i++) { -->
+				<!-- var html = "<a href='"+items[i].html_url+"' target='_blank'><article class='nota'><div><p class='description'>"+items[i].description+"</p><p class='name'>"+items[i].name+"</p><p class='language'>"+items[i].language+"</p><p class='stars'>"+items[i].stargazers_count+" stars</p></div></article></a>"; -->
+			<!-- $("#swift").append(html); -->
+			<!-- } -->
+		<!-- }); -->
+		
+		
+	
+
+	
+  });
+
+
+		
+		</script>
+  </head>
+  <body>
+  
+    
+    
+    
+  </body>
+  </html>
