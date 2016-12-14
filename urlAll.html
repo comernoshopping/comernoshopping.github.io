@@ -18,20 +18,20 @@
       url += date;
 	  
 		urlAll = url;
-		<!-- urlJavascript = url + "+language:javascript"; -->
-		<!-- urlJava = url + "+language:java"; -->
-		<!-- urlPython = url + "+language:python"; -->
-		<!-- urlCSS = url + "+language:css"; -->
-		<!-- urlPHP = url + "+language:php"; -->
-		<!-- urlRuby = url + "+language:ruby"; -->
-		<!-- urlCplus = url + "+language:c%2B%2B"; -->
-		<!-- urlC = url + "+language:c"; -->
-		<!-- urlShell = url + "+language:shell"; -->
-		<!-- urlCsharp = url + "+language:csharp"; -->
-		<!-- urlObjectivec = url + "+language:objective-c"; -->
-		<!-- urlR = url + "+language:r"; -->
-		<!-- urlGo = url + "+language:go"; -->
-		<!-- urlSwift = url + "+language:swift"; -->
+		urlJavascript = url + "+language:javascript";
+		urlJava = url + "+language:java";
+		urlPython = url + "+language:python";
+		urlCSS = url + "+language:css";
+		urlPHP = url + "+language:php";
+		urlRuby = url + "+language:ruby";
+		urlCplus = url + "+language:c%2B%2B";
+		urlC = url + "+language:c";
+		urlShell = url + "+language:shell";
+		urlCsharp = url + "+language:csharp";
+		urlObjectivec = url + "+language:objective-c";
+		urlR = url + "+language:r";
+		urlGo = url + "+language:go";
+		urlSwift = url + "+language:swift";
 			
          
 	
@@ -40,7 +40,7 @@
 		 
 		 
       
-		$.getJSON(urlAll, function(json) {
+		$.getJSON(urlSwift, function(json) {
 		var jsonStr = JSON.stringify(json);
 		document.body.innerHTML = jsonStr;
 		});
