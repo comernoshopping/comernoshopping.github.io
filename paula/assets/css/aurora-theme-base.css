@@ -9,33 +9,31 @@
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/aurora-theme-base-fonts/aileron-regular.woff2") format("woff2"), url("fonts/aurora-theme-base-fonts/aileron-regular.woff") format("woff");
+  
 }
 
 @font-face {
   font-family: Georgia;
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/aurora-theme-base-fonts/aileron-semibold.woff2") format("woff2"), url("fonts/aurora-theme-base-fonts/aileron-semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: Georgia;
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/aurora-theme-base-fonts/aileron-bold.woff2") format("woff2"), url("fonts/aurora-theme-base-fonts/aileron-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: Georgia;
   font-style: normal;
   font-weight: 900;
-  src: url("fonts/aurora-theme-base-fonts/aileron-black.woff2") format("woff2"), url("fonts/aurora-theme-base-fonts/aileron-black.woff") format("woff");
 }
 
 body {
   line-height: 1.556;
-  font-family: Georgia, Helvetica, Arial, sans-serif;
+  font-family: Georgia, sans-serif;
+  color: #543729;
 }
 
 a,
@@ -55,11 +53,11 @@ button:not(.au-underline) {
 
 blockquote {
   border-left: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, sans-serif;
   padding-left: 0;
 }
 blockquote footer {
-  font-family: Georgia, Helvetica, Arial, sans-serif;
+  font-family: Georgia, sans-serif;
 }
 
 input[type="text"],

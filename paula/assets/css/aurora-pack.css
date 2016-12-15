@@ -2603,8 +2603,8 @@ html {
 
 body {
   background-color: #fff;
-  color: #202020;
-  font-family: Georgia, Helvetica, Arial, sans-serif;
+  color: #543729;
+  font-family:  Georgia, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -2704,7 +2704,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Georgia, sans-serif;
 }
 
 code {

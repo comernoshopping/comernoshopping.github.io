@@ -2176,6 +2176,8 @@ body {
 
 .rk-light-color {
   color: #787878;
+  
+  
 }
 
 
@@ -2263,19 +2265,31 @@ body {
 .numero {
 	text-align: center;
 	margin: 0;
-	font-size: 10px;
+	font-size: 12px;
 }
 
-.seta {
-	text-align: center;
-	display:block;
-	margin: 0;
-	
+.proj {
+	display:inline-block;
+		margin:0;
+		width:100%;
+		
 }
-.seta a {
-	font-size: 16px;
-	font-weight: bold;
-	margin: 0 8px;
+
+.proxproj {
+	display:inline-block;
+		margin:0;
+		text-align: right;
+		width:50%;
+		
+		
+}
+
+.projant {
+	display:inline-block;
+		margin:0;
+		text-align: left;
+		width:50%;
+		
 }
 
 .quadro .close {
@@ -2310,3 +2324,17 @@ body {
     display:block;
     clear:both;
     }
+	
+.imgcliente {
+	height: 50px;
+	margin: 5px;
+}
+
+@media (max-width: 600px) {
+	.quadro {
+		width: 70%;
+		right: 15%; 
+		
+	}
+}
+
