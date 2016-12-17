@@ -33,12 +33,12 @@
 body {
   line-height: 1.556;
   font-family: Georgia, sans-serif;
-  color: #543729;
+  color: #543729!important;
 }
 
 a,
 button {
-  color: inherit;
+  color: #543729;
   -webkit-transition: color .3s;
           transition: color .3s;
 }
